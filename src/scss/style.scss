@@ -1,0 +1,167 @@
+
+*::before,*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #cb5053;
+  h1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  input{
+    width: 300px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    @media (max-width:600px) {
+      padding: 8px;
+      width: 240px;
+      position: relative;
+      right: -120px;
+    }
+  }
+  
+}
+    .view{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 950px;
+      gap: 100px;
+      background: linear-gradient(rgb(17, 184, 221),rgb(207, 204, 204));
+      margin:30px auto;
+      border-radius: 7px;
+      h1{
+        color: #fff;
+        font-size: 66px;
+        text-transform: uppercase;
+      }
+        .stats{
+          text-align: start;
+          h3{
+            background:linear-gradient(to left,rgb(210, 13, 20),rgb(136, 63, 18));
+            padding: 15px;
+            border-radius: 7px;
+            color: #fff;
+          }
+            h2{
+              background:linear-gradient(to left,rgb(18, 182, 182),rgb(36, 136, 18));
+              padding: 15px;
+              border-radius: 7px;
+              color: #fff;
+            }
+        }
+        img{
+          width: 200px;
+        }
+    }
+    @media (max-width:970px) {
+     .view{
+      max-width: 500px;
+      gap: 50px;
+      h1{
+        font-size: 30px;
+      }
+      .stats{
+        h3{
+          padding: 7px;
+        }
+
+        h2{
+          padding: 7px;
+        }
+      }
+     }
+    }
+.wrappe_cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+.btn_groups{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  gap: 30px;
+    button{
+      width: 200px;
+      height: 40px;
+      border: none;
+      border-radius: 9px;
+      background:linear-gradient(#20dc16,#0d6308);
+    }
+}
+.card_pokemon{
+  width: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#ec0f13,#52090b);
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+    &:hover{
+       background: linear-gradient(#ec0f139d,#52090b);
+       transition: 0.5s;
+
+    }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img{
+      width: 200px;
+    }
+}
+.fire{
+  width: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#e6ff05,#9e9e09);
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+    &:hover{
+       background: linear-gradient(#d6ec0f9d,#abc526);
+       transition: 0.5s;
+
+    }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img{
+      width: 200px;
+    }
+}
+.water{
+  width: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#0faaec9d,#0dcbe8);
+  cursor: pointer;
+  justify-content: center;
+  flex-direction: column;
+    &:hover{
+       background: linear-gradient(#0c96a89d,#0ecee8);
+       transition: 0.5s;
+
+    }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img{
+      width: 200px;
+    }
+}
